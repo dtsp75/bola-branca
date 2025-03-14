@@ -2,7 +2,7 @@ import express from "express";
 import conn from './db/conn.js';
 import OnibusController from "./controllers/OnibusController.js";
 //import CarController from './controllers/CarController.js';
-//import RecordController from './controllers/RecordController.js';
+import RecordController from './controllers/RecordController.js';
 
 const app = express();
 
@@ -23,7 +23,7 @@ conn
 
 
   app.post('/onibus', OnibusController.createOnibus);
-  //app.post('/onibus/alugar', RecordController.rentOnibus);  
+  app.post('/onibus/paraLinha', RecordController.rentOnibus);  
   //app.post('/onibus/alugar', RecordController.rentOnibus);
 
 /*

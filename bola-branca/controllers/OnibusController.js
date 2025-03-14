@@ -18,19 +18,23 @@ class OnibusController {
     }
   }
 }
-  export default OnibusController;  
-
-
   
-  /*
-  static async listAllCars(req, res) {
-    const allCars = await Car.findAll();
 
-    // const carObj = allCars.map(item => item.get());
-    const carObj = JSON.parse(JSON.stringify(allCars));
+export default OnibusController;  
+
+
+/*
+  static async listAllOnibuses(req, res) {
+    const allOnibus = await Onibus.findAll();
+
+    // const onibusObj = allOnibuses.map(item => item.get());
+    const carObj = JSON.parse(JSON.stringify(allOnibuses));
 
     res.status(302).json(carObj);
   }
+
+
+/*
 
   static async getCar(req, res) {
     const carPlate = req.params.plate;
@@ -72,8 +76,7 @@ class OnibusController {
   }
 }
 
-
-
-export default OnibusController;
-
 */
+
+//export default OnibusController;
+
